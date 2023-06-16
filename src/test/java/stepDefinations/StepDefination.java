@@ -1,5 +1,6 @@
 package stepDefinations;
 
+import TestRunner.RunnerTest;
 import io.cucumber.java.en.Given;
 import pages.Base;
 import pages.SubscribtionPage;
@@ -9,14 +10,13 @@ import pages.SubscribtionPage;
  */
 public class StepDefination 
 {
-	SubscribtionPage SubscribtionP   = new SubscribtionPage(Hooks.Driver);
-	Base base = new Base(Hooks.Driver);
+	SubscribtionPage SubscribtionP   = new SubscribtionPage(RunnerTest.Driver);
 
     	@Given("Navigate to URL")
     	public void navigate_to_url()  {
 
     		System.out.println("ssss");
-    		SubscribtionP.GetSA();
+  //  		SubscribtionP.GetSA();
     		
     	}
 

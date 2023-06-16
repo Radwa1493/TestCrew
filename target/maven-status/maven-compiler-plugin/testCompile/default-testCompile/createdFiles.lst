@@ -1,0 +1,5 @@
+pages\SubscribtionPage.class
+TestRunner\RunnerTest.class
+stepDefinations\StepDefination.class
+pages\Base.class
+stepDefinations\Hooks.class
