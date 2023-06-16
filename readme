@@ -14,7 +14,6 @@ Run from Command line :
 2- mvn test
 
 
-
 Docker :
 Install docker and open it 
 1- On CMD > docker pull selenium/standalone-chrome
@@ -27,5 +26,9 @@ Jenkins :
 1- Download jenkins.war
 2- On CMD : cd path of jenkins.war
 3- On CMD : java -jar jenkins.war --httpPort=8081 
-4-  visit http://localhost:8081 set ur credinials 
-5- 
+4- visit http://localhost:8081 set ur credinials 
+5- add maven plugen
+6- create job as freestyle job 
+7- add local path from advanced -> use custom workspace -> add project path ex "C:\Users\ZZ00VO865\Desktop\CypressFrameworks\Project1" and a display name 
+8- Build -> "Add build step" and select "Invoke top-level Maven targets". In the "Goals" field, enter "test"
+9- run job

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Title of your feature" time="11.454" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Title of your feature" time="9.62" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\ZZ00VO865\AppData\Local\Temp\surefire12112101510053799698\surefirebooter4166847117304086237.jar C:\Users\ZZ00VO865\AppData\Local\Temp\surefire12112101510053799698 2023-06-16T00-05-26_475-jvmRun1 surefire5217248935404689668tmp surefire_04682540530456962778tmp"/>
+    <property name="sun.java.command" value="C:\Users\ZZ00VO865\AppData\Local\Temp\surefire13982615944184827998\surefirebooter10612679997441870982.jar C:\Users\ZZ00VO865\AppData\Local\Temp\surefire13982615944184827998 2023-06-16T00-47-36_318-jvmRun1 surefire3239788724794731357tmp surefire_03204127129808475767tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ZZ00VO865\Desktop\Selenuim_Java_Frameworkd\TestCrew\target\test-classes;C:\Users\ZZ00VO865\Desktop\Selenuim_Java_Frameworkd\TestCrew\target\classes;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ZZ00VO865\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ZZ00VO865\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ZZ00VO865\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ZZ00VO865\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ZZ00VO865\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ZZ00VO865\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ZZ00VO865\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ZZ00VO865\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ZZ00VO865\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ZZ00VO865\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\cucumber-java\6.10.3\cucumber-java-6.10.3.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\cucumber-core\6.10.3\cucumber-core-6.10.3.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\cucumber-gherkin\6.10.3\cucumber-gherkin-6.10.3.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.3\cucumber-gherkin-messages-6.10.3.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\cucumber-plugin\6.10.3\cucumber-plugin-6.10.3.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\docstring\6.10.3\docstring-6.10.3.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\ZZ00VO865\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\ZZ00VO865\.m2\repository\io\cucumber\cucumber-junit\6.10.3\cucumber-junit-6.10.3.jar;C:\Users\ZZ00VO865\.m2\repository\io\github\bonigarcia\webdrivermanager\3.7.1\webdrivermanager-3.7.1.jar;C:\Users\ZZ00VO865\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\ZZ00VO865\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ZZ00VO865\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\ZZ00VO865\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\ZZ00VO865\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\ZZ00VO865\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\ZZ00VO865\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ZZ00VO865\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ZZ00VO865\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\ZZ00VO865\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\ZZ00VO865\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\ZZ00VO865\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ZZ00VO865\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ZZ00VO865\AppData\Local\Temp\surefire12112101510053799698\surefirebooter4166847117304086237.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ZZ00VO865\AppData\Local\Temp\surefire13982615944184827998\surefirebooter10612679997441870982.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
@@ -57,7 +57,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Subscription Packages" classname="Title of your feature" time="11.454">
+  <testcase name="Subscription Packages" classname="Title of your feature" time="9.62">
     <system-out><![CDATA[&amp#27;[32m&amp#27;[1m┌───────────────────────────────────────────────────────────────────────────────────┐&amp#27;[0m
 &amp#27;[32m&amp#27;[1m│&amp#27;[0m Share your Cucumber Report with your team at &amp#27;[36m&amp#27;[1m&amp#27;[4mhttps://reports.cucumber.io&amp#27;[0m          &amp#27;[32m&amp#27;[1m│&amp#27;[0m
 &amp#27;[32m&amp#27;[1m│&amp#27;[0m Activate publishing with one of the following:                                    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
@@ -80,23 +80,21 @@ ssss
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1686866731750	geckodriver	INFO	Listening on 127.0.0.1:44444
-1686866732064	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\ZZ00VO~1\\AppData\\Local\\Temp\\rust_mozprofileliAuZT"
+1686869261174	geckodriver	INFO	Listening on 127.0.0.1:11708
+1686869261435	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\ZZ00VO~1\\AppData\\Local\\Temp\\rust_mozprofileWr2vkA"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1686866732805	Marionette	INFO	Marionette enabled
+1686869262054	Marionette	INFO	Marionette enabled
 Dynamically enable window occlusion 0
-1686866732812	Marionette	INFO	Listening on port 54143
-Read port: 54143
-1686866733407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-Jun 16, 2023 12:05:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+1686869262063	Marionette	INFO	Listening on port 52817
+Read port: 52817
+1686869262228	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Jun 16, 2023 12:47:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Jun 16, 2023 12:05:35 AM org.openqa.selenium.remote.DesiredCapabilities firefox
+Jun 16, 2023 12:47:44 AM org.openqa.selenium.remote.DesiredCapabilities firefox
 INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
-1686866736391	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-1686866737551	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
-1686866740458	Marionette	INFO	Stopped listening on port 54143
-Dynamically enable window occlusion 1
+1686869265002	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1686869266146	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 ]]></system-err>
   </testcase>
 </testsuite>
