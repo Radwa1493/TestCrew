@@ -1,9 +1,14 @@
 package TestRunner;
 import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -22,30 +27,52 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		)public class RunnerTest extends AbstractTestNGCucumberTests {
 
 
-	public static WebDriver Driver = null;
-	//public static  RemoteWebDriver Driver = null;
+//	public static WebDriver Driver = null;
+	public static  RemoteWebDriver Driver = null;
 
-
+    @Parameters({ "browser" })
 	@Before
-	public static void SetUp() throws InterruptedException, MalformedURLException {
-	//	if (browser=="FIREFOX") {
+	public static void SetUp(String browser) throws InterruptedException, MalformedURLException {
+	 
+		if (browser.equals("Firefox") ){
+			
 			WebDriverManager.firefoxdriver().setup();
 			Driver= new FirefoxDriver();
 			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 			capabilities.setCapability("browser.privatebrowsing.autostart", true);
-			Driver.manage().window().maximize();
-			Driver.get("https://subscribe.stctv.com/sa-en");
-	//	}
+		}
+		else if (browser.equals("Chrome") ){
+			
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+			Driver = new ChromeDriver(options); 
 
+		}
+		
+		else if (browser.equals("Edge") ){
+			
+		    // Download and setup Edge WebDriver
+		    WebDriverManager.edgedriver().setup();
+		    
+		    // Create a new instance of EdgeDriver
+		    Driver = new EdgeDriver();
+		}
+		
+		else if (browser.equals("ChromeDocker") ){
+			
+		   	ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
 
-		/*
-    	ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
+	        Driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+		}
+		
+		Driver.manage().window().maximize(); 
 
-        Driver = new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), options);
-        Driver.get("https://subscribe.stctv.com/sa-en");
-		 */
+		Driver.get("https://subscribe.stctv.com/sa-en");
+
 	}
 }
 

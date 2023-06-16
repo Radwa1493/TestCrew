@@ -16,7 +16,7 @@ public class StepDefination
     	public void navigate_to_url()  {
 
     		System.out.println("ssss");
-  //  		SubscribtionP.GetSA();
+    	//	SubscribtionP.GetSubscrition_data();
     		
     	}
 

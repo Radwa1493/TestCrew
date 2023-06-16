@@ -16,7 +16,7 @@ Run from Command line :
 
 Docker :
 Install docker and open it 
-1- On CMD > docker pull selenium/standalone-chrome
+1- On CMD to pull the image > docker pull selenium/standalone-chrome
 2- On CMD > docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
 4- run the code 
 3- Open the browser and navigate to http://localhost:4444/. It reflects Selenium Grid UI
