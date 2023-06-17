@@ -1,8 +1,10 @@
 package stepDefinations;
 
+import java.io.IOException;
+
 import TestRunner.RunnerTest;
 import io.cucumber.java.en.Given;
-import pages.Base;
+import io.cucumber.java.en.Then;
 import pages.SubscribtionPage;
 
 /**
@@ -12,16 +14,32 @@ public class StepDefination
 {
 	SubscribtionPage SubscribtionP   = new SubscribtionPage(RunnerTest.Driver);
 
-    	@Given("Navigate to URL")
-    	public void navigate_to_url()  {
 
-    		System.out.println("ssss");
-    	//	SubscribtionP.GetSubscrition_data();
-    		
-    	}
+	@Then("Check Subscrition SA data")
+	public void Check_SA() throws IOException  {
+	//	SubscribtionP.check_Subscribtion("SA");
+		SubscribtionP.GetSubscrition_data();
 
+		RunnerTest.softAssertion.assertTrue(SubscribtionP.check_Subscribtion("SA"));
 
+	}
+	@Then("Check Subscrition KW data")
+	public void Check_KW() throws IOException  {
+		SubscribtionP.OpenKuwait();
+		SubscribtionP.GetSubscrition_data();
 
+		RunnerTest.softAssertion.assertTrue(SubscribtionP.check_Subscribtion("KW"));
+
+	}
+
+	@Then("Check Subscrition BH data")
+	public void Check_BH() throws IOException  {
+		SubscribtionP.Openbahrin();
+		SubscribtionP.GetSubscrition_data();
+
+		RunnerTest.softAssertion.assertTrue(SubscribtionP.check_Subscribtion("BH"));
+
+	}
 
 
 

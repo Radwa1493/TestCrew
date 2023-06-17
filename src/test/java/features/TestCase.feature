@@ -2,7 +2,7 @@ Feature: Title of your feature
   I want to use this template for my feature file
 
   Scenario: Subscription Packages
-    Given Navigate to URL
-#    When Open subscribution for <Country>
-#    Then Validate on Packages, Type, Price and Currency 
-
+    Given Check Subscrition SA data
+		Then Check Subscrition KW data
+		And Check Subscrition BH data
+		

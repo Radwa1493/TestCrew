@@ -1,25 +1,26 @@
-
-
+The Project based on TestNG Cucumber run on Firefox , Chrome , Edge , Docker-Chrome in parallel 
+in thru Jenkins and display the result in Allure report .
+  
 Project structure 
     /new_poject/
     ├── src/test/java/      
     				 ├──stepDefinations
     				 ├──runner
     				 ├──features
-    ├── pom.xml    
-
+    ├── pom.xml   
+    ├── testng.xml  
 
 Run from Command line :
 1- On CMD : cd path of the project
 2- mvn test
-
+3- Allure report : On CMD : allure serve
 
 Docker :
 Install docker and open it 
 1- On CMD to pull the image > docker pull selenium/standalone-chrome
 2- On CMD > docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome
 4- run the code 
-3- Open the browser and navigate to http://localhost:4444/. It reflects Selenium Grid UI
+3- Open the browser and navigate to http://localhost:4444 It reflects Selenium Grid UI
 5- select session from / LiveView (VNC) Password : secret
 
 Jenkins :
@@ -29,6 +30,6 @@ Jenkins :
 4- visit http://localhost:8081 set ur credinials 
 5- add maven plugen
 6- create job as freestyle job 
-7- add local path from advanced -> use custom workspace -> add project path ex "C:\Users\ZZ00VO865\Desktop\CypressFrameworks\Project1" and a display name 
+7- add local path from advanced -> use custom workspace -> add project path ex "C:\Desktop\new_poject" 
 8- Build -> "Add build step" and select "Invoke top-level Maven targets". In the "Goals" field, enter "test"
 9- run job
