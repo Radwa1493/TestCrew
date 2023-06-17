@@ -5,6 +5,8 @@
     <classes>
       <class name="TestRunner.RunnerTest">
         <methods>
+          <include name="TearDown"/>
+          <include name="runScenario"/>
           <include name="tearDownClass"/>
           <include name="SetUp"/>
           <include name="setUpClass"/>

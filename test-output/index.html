@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-BDD_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-BDD_Test_Suite" class="show-methods passed suite-BDD_Test_Suite"> (show)</a> <!-- show-methods passed suite-BDD_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-BDD_Test_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BDD_Test_Suite" title="TestRunner.RunnerTest" class="method navigator-link" hash-for-method="SetUp(Firefox)">SetUp(Firefox)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BDD_Test_Suite" title="TestRunner.RunnerTest" class="method navigator-link" hash-for-method="runScenario(&quot;Subscription Packages&quot;, &quot;Title of your feature&quot;)">runScenario("Subscription Packages", "Title of your feature")</a> <!-- method navigator-link -->
@@ -130,14 +125,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SetUp(Firefox)">
-                  </a> <!-- SetUp(Firefox) -->
-                  <span class="method-name">SetUp</span>
-                  <span class="parameters">(Firefox)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Subscription Packages&quot;, &quot;Title of your feature&quot;)">
                   </a> <!-- runScenario("Subscription Packages", "Title of your feature") -->
                   <span class="method-name">runScenario</span>
@@ -158,18 +145,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;BDD Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Firefox&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;ChromeDocker&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ChromeDocker&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestRunner.RunnerTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Firefox --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Edge&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;TestRunner.RunnerTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Edge --&gt;
+  &lt;/test&gt; &lt;!-- ChromeDocker --&gt;
 &lt;/suite&gt; &lt;!-- BDD Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -181,10 +162,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Firefox (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Edge (1 class)</span>
+                <span class="test-name">ChromeDocker (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,20 +196,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SetUp')
+data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner.RunnerTest')
-data.setCell(0, 3, 9322);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'TestRunner.RunnerTest')
-data.setCell(1, 3, 376);
+data.setCell(0, 3, 45140);
 window.suiteTableData['BDD_Test_Suite']= { tableData: data, tableDiv: 'times-div-BDD_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-BDD_Test_Suite">
               </div> <!-- times-div-BDD_Test_Suite -->
             </div> <!-- times-div -->
@@ -263,34 +237,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">SetUp(ChromeDocker)</span>
+                <span class="method-start">413 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Subscription Packages", "Title of your feature")</span>
-                <span class="method-start">557 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Subscription Packages", "Title of your feature")</span>
-                <span class="method-start">557 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SetUp(Edge)</span>
-                <span class="method-start">941 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SetUp(Firefox)</span>
-                <span class="method-start">956 ms</span>
+                <span class="method-start">8725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">3372 ms</span>
+                <span class="method-name">TearDown</span>
+                <span class="method-start">53886 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">10283 ms</span>
+                <span class="method-start">53887 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

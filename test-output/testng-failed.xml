@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [BDD Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="Firefox(failed)">
-    <parameter name="browser" value="Firefox"/>
+  <test thread-count="3" parallel="tests" name="ChromeDocker(failed)">
+    <parameter name="browser" value="ChromeDocker"/>
     <classes>
       <class name="TestRunner.RunnerTest">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="TearDown"/>
+          <include name="runScenario"/>
           <include name="tearDownClass"/>
+          <include name="SetUp"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- TestRunner.RunnerTest -->
     </classes>
-  </test> <!-- Firefox(failed) -->
+  </test> <!-- ChromeDocker(failed) -->
 </suite> <!-- Failed suite [BDD Test Suite] -->

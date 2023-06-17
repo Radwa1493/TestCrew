@@ -1,5 +1,7 @@
 pages\SubscribtionPage.class
+pages\SubscribtionPage$1.class
+pages\SubscribtionPage$3.class
 TestRunner\RunnerTest.class
+pages\SubscribtionPage$2.class
 stepDefinations\StepDefination.class
 pages\Base.class
-stepDefinations\Hooks.class
