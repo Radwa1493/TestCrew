@@ -32,4 +32,5 @@ Jenkins :
 6- create job as freestyle job 
 7- add local path from advanced -> use custom workspace -> add project path ex "C:\Desktop\new_poject" 
 8- Build -> "Add build step" and select "Invoke top-level Maven targets". In the "Goals" field, enter "test"
+10- Add a post-build action-> "allure serve allure-results"
 9- run job
