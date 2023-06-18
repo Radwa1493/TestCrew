@@ -35,7 +35,9 @@ public class Base {
 	public void implicitlyWait(int sec,WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(sec,TimeUnit.SECONDS) ;	
 	}
-
+	protected void clickButton(WebElement button) {
+		button.click();
+	}
 
 
 }
