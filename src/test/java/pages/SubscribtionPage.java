@@ -34,19 +34,6 @@ public class SubscribtionPage extends Base  {
 	ArrayList<String> Actual_Price = new ArrayList<String>();
 	ArrayList<String> Actual_Currency= new ArrayList<String>();
 
-	ArrayList<String> Expected_Price = new ArrayList<String>() {{
-		add("15");
-		add("25");
-		add("60");
-
-	}};
-	ArrayList<String> Expected_Currency = new ArrayList<String>() {{
-		add("SAR/month");
-		add("SAR/month");
-		add("SAR/month");
-
-	}};
-
 
 	public SubscribtionPage(WebDriver Driver){
 		this.driver = Driver;
